@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaire Kitchen — Good food, gathered well</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="overrides.css" />
+  <link rel="stylesheet" href="live-overrides.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Gaire Kitchen home"><span class="brand-mark">GK</span><span>gaire<br><em>kitchen</em></span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#visit">Visit us</a><a href="dashboard.html">Admin ↗</a></nav>
+    <button class="cart-button" id="cartToggle">Your bag <span id="cartCount">0</span><span class="arrow">↗</span></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">A neighborhood kitchen · Est. 2024</p>
+        <h1>Come hungry.<br><span>Leave happy.</span></h1>
+        <p class="hero-lede">Big flavors, honest ingredients, and a welcome that always has room for one more.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#menu">Explore the menu <span>↗</span></a><a class="text-link" href="#visit">Find us <span>→</span></a></div>
+      </div>
+      <div class="hero-art"><div class="stamp">made<br>with<br>heart</div><img src="assets/noodles.jpg" alt="A colorful plate of stir-fried noodles" /><div class="scribble">good things<br>take time <span>✳</span></div></div>
+    </section>
+
+    <section class="ticker" aria-label="Restaurant values"><div>LOCAL PRODUCE <span>✳</span> SLOW COOKED <span>✳</span> BIG FLAVOUR <span>✳</span> GOOD COMPANY <span>✳</span> LOCAL PRODUCE <span>✳</span></div></section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading"><div><p class="eyebrow">The good stuff</p><h2>Everything we serve</h2></div><p class="section-note">Comforting classics, playful plates,<br>and something cold to wash it down.</p></div>
+      <div class="filter-row" role="tablist"><button class="filter active" data-filter="all">All plates</button><button class="filter" data-filter="small">Small plates</button><button class="filter" data-filter="mains">Mains</button><button class="filter" data-filter="drinks">Drinks</button></div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-category="mains"><div class="dish-image dish-noodles"><span>01</span></div><div class="card-meta"><div><h3>Firecracker noodles</h3><p>Wok-tossed noodles, charred greens, sesame</p></div><strong>$14</strong></div><button class="add-button" data-name="Firecracker noodles" data-price="14">+ Add</button></article>
+        <article class="menu-card" data-category="small"><div class="dish-image dish-crispy"><span>02</span></div><div class="card-meta"><div><h3>Crispy cauliflower</h3><p>Ginger-lime glaze, scallion, toasted peanut</p></div><strong>$10</strong></div><button class="add-button" data-name="Crispy cauliflower" data-price="10">+ Add</button></article>
+        <article class="menu-card" data-category="mains"><div class="dish-image dish-bowl"><span>03</span></div><div class="card-meta"><div><h3>Gaire rice bowl</h3><p>Sticky rice, roasted squash, house pickle</p></div><strong>$16</strong></div><button class="add-button" data-name="Gaire rice bowl" data-price="16">+ Add</button></article>
+        <article class="menu-card" data-category="drinks"><div class="dish-image dish-citrus"><span>04</span></div><div class="card-meta"><div><h3>Ginger spritz</h3><p>Ginger cordial, citrus, sparkling water</p></div><strong>$8</strong></div><button class="add-button" data-name="Ginger spritz" data-price="8">+ Add</button></article>
+      </div>
+      <div class="full-menu" id="full-menu">
+        <div class="full-menu-heading"><p class="eyebrow">Everything we serve</p><h2>The full menu</h2><p>Tap any item to add it to your bag. Prices are in Nepalese rupees.</p></div>
+        <div class="menu-list">
+          <article class="menu-list-card"><h3>Salads</h3><p><span>Nepali salad</span><b>180</b></p><p><span>Waldorf salad</span><b>280</b></p><p><span>Fruit salad</span><b>320</b></p></article>
+          <article class="menu-list-card"><h3>Pizza</h3><p><span>Mexican veg pizza</span><b>460</b></p><p><span>Spicy chicken pizza</span><b>500</b></p><p><span>Mix pizza</span><b>550</b></p></article>
+          <article class="menu-list-card"><h3>Mo:Mo</h3><p><span>Veg · steam / fry / chilli</span><b>150 / 180 / 210</b></p><p><span>Non-veg · steam / fry / chilli</span><b>180 / 220 / 260</b></p></article>
+          <article class="menu-list-card"><h3>Chowmein</h3><p><span>Chowmein · veg / chicken</span><b>130 / 180</b></p><p><span>Keema noodles</span><b>260</b></p><p><span>Current cha cha</span><b>250</b></p><p><span>Current combo bowl</span><b>350</b></p></article>
+          <article class="menu-list-card"><h3>Kathi roll</h3><p><span>Paneer</span><b>220</b></p><p><span>Egg</span><b>170</b></p><p><span>Chicken</span><b>190</b></p><p><span>Double chicken</span><b>260</b></p></article>
+          <article class="menu-list-card"><h3>Thukpa</h3><p><span>Veg / chicken</span><b>180 / 220</b></p></article>
+          <article class="menu-list-card"><h3>Sandwich</h3><p><span>Veg</span><b>250</b></p><p><span>Non-veg</span><b>300</b></p></article>
+          <article class="menu-list-card"><h3>Special</h3><p><span>Nachos</span><b>280</b></p></article>
+          <article class="menu-list-card wide"><h3>Main course</h3><p><span>Roti</span><b>40</b></p><p><span>Steamed rice</span><b>150</b></p><p><span>Jeera rice</span><b>180</b></p><p><span>Paneer butter masala</span><b>380</b></p><p><span>Daal fry</span><b>180</b></p><p><span>Daal tadka</span><b>190</b></p><p><span>Mix veg</span><b>290</b></p><p><span>Kadhai paneer</span><b>380</b></p><p><span>Matar paneer</span><b>380</b></p><p><span>Chicken curry</span><b>350</b></p><p><span>Mutton curry</span><b>450</b></p></article>
+          <article class="menu-list-card wide"><h3>Biryani</h3><p><span>Veg / chicken / mutton</span><b>310 / 380 / 450</b></p></article>
+          <article class="menu-list-card"><h3>Non-veg starters</h3><p><span>Timur chicken</span><b>350</b></p><p><span>Chicken roast</span><b>350</b></p><p><span>Chicken choila</span><b>350</b></p><p><span>Tass · chicken / mutton</span><b>350 / 450</b></p><p><span>Chicken hot wings</span><b>380</b></p><p><span>Chicken chilli</span><b>380</b></p><p><span>Chicken lolipop · fried / chilli</span><b>350 / 410</b></p><p><span>Chicken 65</span><b>390</b></p><p><span>Crispy chicken</span><b>410</b></p><p><span>Kung pao chicken</span><b>410</b></p><p><span>Dragon chicken</span><b>440</b></p></article>
+          <article class="menu-list-card"><h3>Vegetarian starters</h3><p><span>Ghamanja · Wai Wai</span><b>120</b></p><p><span>Peanut sadeko</span><b>180</b></p><p><span>French fries</span><b>190</b></p><p><span>Peri peri french fries</span><b>210</b></p><p><span>Corn salt & pepper</span><b>210</b></p><p><span>Crispy vegetable</span><b>250</b></p><p><span>Mustang aloo</span><b>260</b></p><p><span>Thin mint mushroom</span><b>280</b></p><p><span>Chilly paneer</span><b>420</b></p><p><span>Paneer pakoda</span><b>420</b></p><p><span>Kung pao paneer</span><b>420</b></p></article>
+          <article class="menu-list-card"><h3>Coffee · tea · shakes</h3><p><span>Black coffee / milk coffee</span><b>60 / 120</b></p><p><span>Milk tea / black tea / lemon tea</span><b>50 / 40 / 40</b></p><p><span>Milk shake · chocolate / strawberry</span><b>250 / 250</b></p><p><span>Milk shake · oreo / kitkat</span><b>260 / 290</b></p><p><span>Hot lemon with honey</span><b>150</b></p><p><span>Hot lemon</span><b>60</b></p></article>
+          <article class="menu-list-card"><h3>Refreshing drinks</h3><p><span>Lemon sprite / soda</span><b>120 / 180</b></p><p><span>Lemonade / minty lemonade</span><b>80 / 100</b></p><p><span>Masala coke / sprite</span><b>120 / 120</b></p><p><span>Sweet lassi / flavour lassi</span><b>200 / 250</b></p><p><span>Real juice · pineapple / cranberry / orange</span><b>150 glass</b></p></article>
+          <article class="menu-list-card"><h3>Mocktails</h3><p><span>Fruit punch / Gaire sunset</span><b>260 / 260</b></p><p><span>Blue angle / pink lady</span><b>275 / 275</b></p><p><span>Virgin mojito</span><b>275</b></p><p><span>Watermelon mojito</span><b>300</b></p><p><span>Be mine berry</span><b>350</b></p></article>
+          <article class="menu-list-card"><h3>Mad maxology</h3><p><span>Screw driver / hot rum punch</span><b>450 / 450</b></p><p><span>Cube libre</span><b>450</b></p><p><span>Whiskey sour</span><b>550</b></p><p><span>Blue hawaiin / vodka sour</span><b>650 / 500</b></p><p><span>Vodka sunrise</span><b>500</b></p><p><span>Blue lagon / New York sour</span><b>550 / 550</b></p><p><span>Gaire paradise / mojito</span><b>550 / 750</b></p></article>
+          <article class="menu-list-card"><h3>Cloud hookah</h3><p><span>Pan mint hookah</span><b>450</b></p><p><span>American freezer</span><b>500</b></p><p><span>Hookah coil</span><b>50</b></p></article>
+          <article class="menu-list-card wide"><h3>Regular drinks</h3><p><span>Tuborg gold / strong</span><b>620 / 575</b></p><p><span>Gorkha strong</span><b>50</b></p><p><span>Barasinghe pilsner / Carlsberg</span><b>—</b></p><p><span>Nude vodka · domestic / quarter / bottle</span><b>290 / 750 / 3000</b></p><p><span>Signature green · domestic / quarter / bottle</span><b>325 / 900 / 3600</b></p><p><span>Signature red · domestic / quarter / bottle</span><b>350 / 1000 / 4000</b></p><p><span>OD regular / chimney</span><b>350 / 450</b></p><p><span>Governor / Gorkhas & guns</span><b>350 / 375</b></p><p><span>Kalpa patther / Khukuri rum</span><b>390 / 300</b></p></article>
+        </div>
+      </div>
+      <a class="menu-link" href="#full-menu">Jump to the full menu <span>↓</span></a>
+    </section>
+
+    <section class="story-section" id="story"><div class="story-art"><img src="assets/wine-sketch.png" alt="Hand-drawn bottles and glassware" /></div><div class="story-copy"><p class="eyebrow">A little about us</p><h2>Made for lingering.</h2><p>Gaire Kitchen is a small, sunny spot for food with a little edge and a lot of care. We make everything in-house, work with the seasons, and believe the best ingredient is a room full of people you like.</p><a class="button button-outline" href="#visit">Our story <span>↗</span></a></div></section>
+
+    <section class="visit-section section-wrap" id="visit"><div><p class="eyebrow">Come say hello</p><h2>Pull up a chair.</h2></div><div class="visit-details"><p>14 Willow Lane<br>Riverside, NY 10003</p><p>Tue–Sun · 11am–10pm<br><a href="tel:+12125550148">(212) 555-0148</a></p><a class="button button-dark" href="tel:+12125550148">Call us <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="footer section-wrap"><a class="brand" href="#top"><span class="brand-mark">GK</span><span>gaire<br><em>kitchen</em></span></a><p>© 2024 Gaire Kitchen. Come as you are.</p><div><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram ↗</a><a href="mailto:hello@gairekitchen.com">Email ↗</a></div></footer>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><h2>Your bag</h2><button id="cartClose" aria-label="Close bag">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your bag is empty.<br>Let's fix that.</p></div><div class="cart-footer"><div><span>Subtotal</span><strong id="cartTotal">Rs. 0</strong></div><button class="button button-dark" id="checkoutButton">Checkout <span>↗</span></button></div></aside>
+  <div class="checkout-modal" id="checkoutModal" aria-hidden="true"><div class="checkout-card"><button class="checkout-close" id="checkoutClose" aria-label="Close checkout">×</button><p class="eyebrow">Almost there</p><h2>Complete your order</h2><p class="checkout-summary">Your order total: <strong id="checkoutTotal">Rs. 0</strong></p><form id="checkoutForm"><label>Full name<input name="name" required placeholder="Your name" /></label><label>Phone number<input name="phone" required type="tel" placeholder="98XXXXXXXX" /></label><label>Delivery address<textarea name="address" required placeholder="Where should we bring it?"></textarea></label><label>Payment method<select name="payment"><option>Cash on delivery</option><option>Pay at pickup</option><option>Online payment</option></select></label><button class="button button-dark" type="submit">Place order <span>↗</span></button></form><div class="order-success" id="orderSuccess"><span>✓</span><h3>Order received!</h3><p>Thanks. We’ll call you shortly to confirm.</p></div></div></div>
+  <div class="scrim" id="scrim"></div>
+  <script src="script.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>
+
